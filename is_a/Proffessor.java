@@ -27,4 +27,16 @@ public class Proffessor extends Person{
                     super(null , 0 , null , null , 0 , false);
           }
 
+
+
+          public double getSalary() {
+                    return salary;
+          }
+
+
+
+          public String getSubjectName() {
+                    return subjectName;
+          }
+
 }

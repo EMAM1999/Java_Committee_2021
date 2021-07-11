@@ -27,4 +27,10 @@ public class Student extends Person {
                     super(null , 0 , null , null , 0 , false);
           }
 
+
+
+          public int getGPA() {
+                    return GPA;
+          }
+
 }

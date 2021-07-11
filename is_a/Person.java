@@ -32,6 +32,36 @@ public class Person extends Object{
 
 
 
+          public int getAge() {
+                    return age;
+          }
+
+
+
+          public String getEmail() {
+                    return email;
+          }
+
+
+
+          public String getName() {
+                    return name;
+          }
+
+
+
+          public String getPhone() {
+                    return phone;
+          }
+
+
+
+          public double getRate() {
+                    return rate;
+          }
+
+
+
 
 
 
