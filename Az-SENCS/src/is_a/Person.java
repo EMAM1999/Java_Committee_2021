@@ -9,64 +9,50 @@ package is_a;
 /**
  @author EMAM
  */
-public class Person extends Object{
+public class Person extends Object {
 
+      private String name;
+      int age;
+      protected String phone;
+      public String email;
+      double rate;
+      boolean male;
 
-          private String name;
-          int age;
-          protected String phone;
-          public String email;
-          double rate;
-          boolean male;
+      public Person(String name, int age, String phone, String email, double rate, boolean male) {
+            this.name = name;
+            this.age = age;
+            this.phone = phone;
+            this.email = email;
+            this.rate = rate;
+            this.male = male;
+      }
 
+      public Person() {
+            System.out.println("superclass default constructor");
+      }
 
+      public int getAge() {
+            return age;
+      }
 
-          public Person(String name , int age , String phone , String email , double rate , boolean male) {
-                    this.name = name;
-                    this.age = age;
-                    this.phone = phone;
-                    this.email = email;
-                    this.rate = rate;
-                    this.male = male;
-          }
+      public String getEmail() {
+            return email;
+      }
 
+      public String getName() {
+            return name;
+      }
 
+      public String getPhone() {
+            return phone;
+      }
 
-          public int getAge() {
-                    return age;
-          }
+      public double getRate() {
+            return rate;
+      }
 
-
-
-          public String getEmail() {
-                    return email;
-          }
-
-
-
-          public String getName() {
-                    return name;
-          }
-
-
-
-          public String getPhone() {
-                    return phone;
-          }
-
-
-
-          public double getRate() {
-                    return rate;
-          }
-
-
-
-
-
-
-          protected void setName(String name) {
-                    this.name = name;
-          }
+      protected void setName(String name) {
+            this.name = name;
+      }
 
 }

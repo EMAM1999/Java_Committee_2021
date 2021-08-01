@@ -1,0 +1,61 @@
+/*
+ To change this license header, choose License Headers in Project Properties.
+ To change this template file, choose Tools | Templates
+ and open the template in the editor.
+ */
+package Task.R92F;
+
+/**
+
+ @author REHAM
+ */
+public class Cone extends Shape3D{
+          int radius ;
+          int height;
+          
+          public Cone(int radius , int height) {
+                    this.radius = radius;
+                    this.height = height;
+          }
+
+          public int getHeight() {
+                    return height;
+          }
+
+          public void setHeight(int height) {
+                    this.height = height;
+          }
+
+          public int getRadius() {
+                    return radius;
+          }
+
+          public void setRadius(int radius) {
+                    this.radius = radius;
+          }
+          
+          @Override
+          public double getArea(){
+                    return ( Math.PI * radius * height ) + (Math.PI * Math.pow(radius, 2));
+          }
+
+
+
+          @Override
+          public void getShapeType() {
+                    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+          }
+          
+          @Override
+          public double getVolume(){
+                    return 1.0/3 * Math.PI * Math.pow(radius, 2) * height;
+          }
+
+
+
+          @Override
+          public void paint() {
+                    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+          }
+          
+}

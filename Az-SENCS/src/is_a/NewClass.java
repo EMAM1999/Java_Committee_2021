@@ -17,33 +17,30 @@ public class NewClass {
 // private
 // object
 
-
-          public static void main(String[] args) {
-                    Scanner in = new Scanner(System.in);
-                    Student std = new Student();
-                    Proffessor pro = new Proffessor();
-                    Person p = new Person("" , 0 , "" , "" , 0 , true);
-          }
+      public static void main(String[] args) {
+            Scanner in = new Scanner(System.in);
+            Student std = new Student();
+            Student std2 = new Student("", 0, "", "", 0, true, 0);
+            Proffessor pro = new Proffessor();
+            Person p = new Person("", 0, "", "", 0, true);
+      }
 
 }
 
 class proff extends person {
 
-
-          int cNum;
+      int cNum;
 
 }
 
 class person extends object {
 
-
-          int bNum;
+      int bNum;
 
 }
 
 class object {
 
-
-          int aNum;
+      int aNum;
 
 }
