@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projects.gui.practise.noats_and_crosses.activities.StartSceneController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="700.0" opacity="0.2" pickOnBounds="true">
+         <image>
+            <Image url="@../images/download.jpg" />
+         </image>
+      </ImageView>
+      <RadioButton layoutX="451.0" layoutY="375.0" mnemonicParsing="false" selected="true" text="X starts" fx:id="xStarts" />
+      <Button fx:id="startButton" defaultButton="true" layoutX="275.0" layoutY="369.0" mnemonicParsing="false" onAction="#startTheGame" prefHeight="43.0" prefWidth="151.0" text="Start" underline="true">
+         <font>
+            <Font name="Arial Bold" size="16.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER" layoutY="80.0" prefHeight="100.0" prefWidth="700.0" spacing="30.0">
+         <children>
+            <RadioButton fx:id="PlayerButton1" mnemonicParsing="false" text="computer">
+               <toggleGroup>
+                  <ToggleGroup fx:id="whichComputer" />
+               </toggleGroup>
+            </RadioButton>
+            <TextField fx:id="playerName1" promptText="player name" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="X">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="levelBox1" prefHeight="31.0" prefWidth="151.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutY="180.0" prefHeight="100.0" prefWidth="700.0" spacing="30.0">
+         <children>
+            <RadioButton fx:id="PlayerButton2" mnemonicParsing="false" text="computer" toggleGroup="$whichComputer" />
+            <TextField fx:id="playerName2" promptText="player name" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="O">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <ComboBox fx:id="levelBox2" prefHeight="31.0" prefWidth="151.0" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

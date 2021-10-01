@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="733.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="790.0" fitWidth="1118.0" layoutX="-9.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/هاك1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="634.0" fitWidth="540.0" layoutX="330.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Pictures/AH.jpg" />
+         </image>
+      </ImageView>
+      <VBox layoutX="328.0" layoutY="128.0" prefHeight="410.0" prefWidth="540.0">
+         <children>
+            <HBox prefHeight="43.0" prefWidth="483.0">
+               <children>
+                  <Button id="00" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text=" 1" />
+                  <Button id="01" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text="2" />
+                  <Button id="02" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text="3" />
+                  <Button id="03" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text="4" />
+                  <Button id="04" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="61.0" text="5" />
+                  <Button id="05" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text="6" />
+                  <Button id="06" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text="7" />
+                  <Button id="07" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text="8" />
+                  <Button id="08" mnemonicParsing="false" opacity="0.66" prefHeight="43.0" prefWidth="60.0" text="9" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="10" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="9" />
+                  <Button id="11" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="8" />
+                  <Button id="12" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="7" />
+                  <Button id="13" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="6" />
+                  <Button id="14" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="15" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="4" />
+                  <Button id="16" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="3" />
+                  <Button id="17" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="2" />
+                  <Button id="18" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="20" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="21" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="4" />
+                  <Button id="22" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="23" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="24" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="25" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="26" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="27" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="28" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="30" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="31" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="32" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="3" />
+                  <Button id="33" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="4" />
+                  <Button id="34" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="35" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="36" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="37" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="38" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="40" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="41" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="2" />
+                  <Button id="42" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="43" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="44" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="45" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="46" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="47" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="48" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="50" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="51" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="5" />
+                  <Button id="52" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="53" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="54" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="55" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="3" />
+                  <Button id="56" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="57" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="58" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="60" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="61" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="62" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="63" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="64" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="5" />
+                  <Button id="65" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="66" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="67" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="68" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="70" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="71" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="9" />
+                  <Button id="72" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="73" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="74" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="75" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="76" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="77" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="78" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+            <HBox opacity="0.66" prefHeight="46.0" prefWidth="414.0">
+               <children>
+                  <Button id="80" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="81" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="82" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="83" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="84" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" />
+                  <Button id="85" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="86" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+                  <Button id="87" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text="2" />
+                  <Button id="88" mnemonicParsing="false" opacity="0.66" prefHeight="46.0" prefWidth="60.0" text=" 1" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
