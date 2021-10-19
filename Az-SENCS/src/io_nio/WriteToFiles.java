@@ -20,7 +20,7 @@ public class WriteToFiles {
 //          DataOutputStream
 //          ObjectOutputStream
 
-          static String fileName = "C:\\Users\\EMAM\\Desktop\\123.txt";
+          static String fileName = "C:\\Users\\EMAM\\Desktop\\123";
 
 
           public static void main(String[] args) throws FileNotFoundException , IOException {
@@ -32,6 +32,75 @@ public class WriteToFiles {
 //                    for ( String i = "*" ; i.length() < 10 ; i += "*" ) {
 //                              System.out.println(i);
 //                    }
+//                    DataOutputStream dos = new DataOutputStream(new FileOutputStream(fileName + ".dat"));
+//                    for ( int i = 1 ; i <= 10 ; i++ ) {
+//                    dos.writeInt(i);
+//                    dos.writeInt(i*i);
+//                    dos.writeUTF("\n");
+//                    }
+//                    System.out.println(dos.size());
+
+//                    Student s = new Student("Ahmed" , "male" , 20 , 90);
+//                    ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(fileName + ".dat"));
+//                    oos.writeObject(s);
+                    
+          }
+
+}
+
+class Student implements Serializable {
+
+          String name;
+          String gender;
+          int age;
+          int grade;
+
+
+          public Student(String name , String gender , int age , int grade) {
+                    this.name = name;
+                    this.gender = gender;
+                    this.age = age;
+                    this.grade = grade;
+          }
+
+
+          public int getAge() {
+                    return age;
+          }
+
+
+          public void setAge(int age) {
+                    this.age = age;
+          }
+
+
+          public String getGender() {
+                    return gender;
+          }
+
+
+          public void setGender(String gender) {
+                    this.gender = gender;
+          }
+
+
+          public int getGrade() {
+                    return grade;
+          }
+
+
+          public void setGrade(int grade) {
+                    this.grade = grade;
+          }
+
+
+          public String getName() {
+                    return name;
+          }
+
+
+          public void setName(String name) {
+                    this.name = name;
           }
 
 }
