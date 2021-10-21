@@ -6,6 +6,8 @@
 package Projects.gui.yellow_team;
 
 import static Projects.gui.yellow_team.Sudoku.isValid;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
 
@@ -14,13 +16,13 @@ import static Projects.gui.yellow_team.Sudoku.isValid;
 public class SamuraiSudoku {
 
           private Sudoku[] unSolvedBoard;
+          private Sudoku[] solvedBoard;
 
-          private int[][][] solvedBoard = {
-                    new int[9][9] ,
-                    new int[9][9] ,
-                    new int[9][9] ,
-                    new int[9][9] ,
-                    new int[9][9] };
+          public static final int LEFT_UP = 0;
+          public static final int RIGHT_UP = 1;
+          public static final int CENTER = 2;
+          public static final int LEFT_DOWN = 3;
+          public static final int RIGHT_DOWN = 4;
 
 
           public SamuraiSudoku(int n) {
@@ -30,17 +32,22 @@ public class SamuraiSudoku {
 
 
           public int[][][] getSolvedBoard() {
-                    return new int[][][] {};
+                    return new int[][][] {
+                              solvedBoard[0].getUnSolvedBoard() ,
+                              solvedBoard[1].getUnSolvedBoard() ,
+                              solvedBoard[2].getUnSolvedBoard() ,
+                              solvedBoard[3].getUnSolvedBoard() ,
+                              solvedBoard[4].getUnSolvedBoard() };
           }
 
 
           public int[][][] getUnSolvedBoard() {
                     return new int[][][] {
-                              unSolvedBoard[0].getUnSolvedBoard() ,
-                              unSolvedBoard[1].getUnSolvedBoard() ,
-                              unSolvedBoard[2].getUnSolvedBoard() ,
-                              unSolvedBoard[3].getUnSolvedBoard() ,
-                              unSolvedBoard[4].getUnSolvedBoard(), };
+                              unSolvedBoard[LEFT_UP].getUnSolvedBoard() ,
+                              unSolvedBoard[RIGHT_UP].getUnSolvedBoard() ,
+                              unSolvedBoard[CENTER].getUnSolvedBoard() ,
+                              unSolvedBoard[LEFT_DOWN].getUnSolvedBoard() ,
+                              unSolvedBoard[RIGHT_DOWN].getUnSolvedBoard(), };
           }
 
 
@@ -57,7 +64,6 @@ public class SamuraiSudoku {
                     }
                     int[][] leftUp = generateLeftUp(num , n / 5);
                     Sudoku leftUpSudoku = new Sudoku(leftUp);
-
 //                    generate right-up side with the common box
                     num = new int[9][9];
                     for ( int i = 0 ; i < 3 ; i++ ) {
@@ -67,6 +73,7 @@ public class SamuraiSudoku {
                     }
                     int[][] rightUp = generateRightUp(num , n / 5);
                     Sudoku rightUpSudoku = new Sudoku(rightUp);
+                    rightUpSudoku.getList().size();
 
 //                    generate left-down side with the common box
                     num = new int[9][9];
@@ -88,7 +95,13 @@ public class SamuraiSudoku {
                     int[][] rightDown = generateRightDown(num , n / 5);
                     Sudoku rightDownSudoku = new Sudoku(rightDown);
 
-                    return new Sudoku[] { leftUpSudoku , rightUpSudoku , centerSudoku , leftDownSudoku , rightDownSudoku };
+                    Sudoku[] s = new Sudoku[5];
+                    s[LEFT_UP] = leftUpSudoku;
+                    s[RIGHT_UP] = rightUpSudoku;
+                    s[CENTER] = centerSudoku;
+                    s[LEFT_DOWN] = leftDownSudoku;
+                    s[RIGHT_DOWN] = rightDownSudoku;
+                    return s;
           }
 
 
@@ -151,14 +164,26 @@ public class SamuraiSudoku {
           }
 
 
-          private int[][][] solve(Sudoku[] sudokus) {
-                    sudokus[0].getList();
-                    sudokus[1].getList();
-                    sudokus[2].getList();
-                    sudokus[3].getList();
-                    sudokus[4].getList();
+          private Sudoku[] solve(Sudoku[] sudokus) {
+                    Set<int[][]> luSet = sudokus[LEFT_UP].getList();
+                    Set<int[][]> ruSet = sudokus[RIGHT_UP].getList();
+                    Set<int[][]> cSet = sudokus[CENTER].getList();
+                    Set<int[][]> ldSet = sudokus[LEFT_DOWN].getList();
+                    Set<int[][]> rdSet = sudokus[RIGHT_DOWN].getList();
                     // get the common between all solutions 
-                    return new int[][][] {};
+                    Set<int[][]> solutions1 = getCommon(luSet , cSet , 6 , 6 , 0 , 0);
+                    Set<int[][]> solutions2 = getCommon(ruSet , solutions1 , 6 , 0 , 0 , 6);
+                    Set<int[][]> solutions3 = getCommon(ldSet , solutions2 , 0 , 6 , 6 , 0);
+                    Set<int[][]> solutions4 = getCommon(rdSet , solutions3 , 0 , 0 , 6 , 6);
+
+                    return new Sudoku[] {};
+          }
+
+
+          private Set<int[][]> getCommon(Set<int[][]> side , Set<int[][]> center , int xSide , int ySide , int xCenter , int yCenter) {
+                    Set<int[][]> commonSet = new HashSet<>();
+                    //////////////////////////////////
+                    return commonSet;
           }
 
 //          private static int[][] generateCenter(int bord[][] , int num) {

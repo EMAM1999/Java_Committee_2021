@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="500.0" style="-fx-background-color: #00000000;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projects.gui.yellow_team.mainStageController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="211.0" layoutY="55.0" onMouseReleased="#openGame" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="78.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="71.0" layoutY="205.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="78.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="351.0" layoutY="205.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="78.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="78.0" layoutX="211.0" layoutY="355.0" rotate="45.0" stroke="BLACK" strokeType="INSIDE" width="78.0" />
+      <Ellipse fill="DODGERBLUE" layoutX="250.0" layoutY="244.0" radiusX="50.0" radiusY="50.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>

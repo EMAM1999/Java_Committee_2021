@@ -1,0 +1,883 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Projects.gui.yellow_team.sudoukoController">
+   <children>
+      <Button id="1" layoutX="79.0" layoutY="279.0" mnemonicParsing="false" onAction="#write" prefHeight="61.0" prefWidth="76.0" text="1" />
+      <Button id="2" layoutX="155.0" layoutY="279.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="2" />
+      <Button id="3" layoutX="231.0" layoutY="279.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="3" />
+      <Button id="4" layoutX="79.0" layoutY="340.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="4" />
+      <Button id="5" layoutX="155.0" layoutY="340.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="5" />
+      <Button id="6" layoutX="230.0" layoutY="340.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="6" />
+      <Button id="7" layoutX="79.0" layoutY="401.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="7" />
+      <Button id="8" layoutX="155.0" layoutY="401.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="8" />
+      <Button id="9" layoutX="231.0" layoutY="401.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="76.0" text="9" />
+      <Group layoutX="272.0" layoutY="96.0">
+         <children>
+            <Line endX="-210.0" endY="491.0" layoutX="680.0" layoutY="60.0" startX="-210.0" strokeWidth="5.0" />
+            <Line endX="-210.0" endY="491.0" layoutX="514.0" layoutY="60.0" startX="-210.0" strokeWidth="5.0" />
+            <Line endX="213.0" layoutX="410.0" layoutY="220.0" startX="-272.9999694824219" strokeWidth="5.0" />
+            <Line endX="213.0" layoutX="410.0" layoutY="386.0" startX="-272.9999694824219" strokeWidth="5.0" />
+         </children>
+      </Group>
+      <VBox layoutX="416.0" layoutY="158.0" spacing="15.0">
+         <children>
+            <HBox spacing="15.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l00" alignment="CENTER" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l01" alignment="CENTER" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l02" alignment="CENTER" onMouseClicked="#clicked" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l10" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l11" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l12" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l20" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l21" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l22" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l03" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l04" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l05" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l13" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l14" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l15" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l23" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l24" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l25" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l06" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l07" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l08" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l16" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l17" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l18" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l26" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l27" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l28" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l30" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l31" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l32" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l40" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l41" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l42" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l50" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l51" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l52" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l33" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l34" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l35" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l43" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l44" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l45" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l53" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l54" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l55" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l36" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l37" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l38" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l46" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l47" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l48" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l56" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l57" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l58" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox spacing="15.0">
+               <children>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l60" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l61" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l62" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l70" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l71" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l72" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l80" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l81" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l82" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l63" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l64" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l65" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l73" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l74" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l75" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l83" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l84" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l85" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <VBox>
+                     <children>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l66" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l67" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l68" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l76" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l77" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l78" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label fx:id="l86" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l87" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                              <Label fx:id="l88" alignment="CENTER" onMouseEntered="#entered" onMouseExited="#exited" prefHeight="50.0" prefWidth="50.0" text="1" wrapText="true">
+                                 <font>
+                                    <Font name="Arial Bold" size="17.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="436.0" layoutY="44.0" prefHeight="82.0" prefWidth="298.0" spacing="75.0">
+         <children>
+            <Label contentDisplay="TOP" graphicTextGap="6.0" prefHeight="32.0" prefWidth="58.0" text="undo" textAlignment="CENTER" textFill="#222020">
+               <graphic>
+                  <ImageView fitHeight="61.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@undo_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label contentDisplay="TOP" graphicTextGap="6.0" text="Erase" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@erase_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label contentDisplay="TOP" graphicTextGap="6.0" text="Notes" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pencil_30px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label contentDisplay="TOP" graphicTextGap="6.0" text="Hint" textAlignment="CENTER">
+               <graphic>
+                  <ImageView fitHeight="58.0" fitWidth="58.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@light_on_100px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
