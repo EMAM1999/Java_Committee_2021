@@ -5,7 +5,9 @@
  */
 package io_nio;
 
-import java.io.FileNotFoundException;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
 
 /**
 
@@ -19,7 +21,42 @@ public class ReadFromFiles {
 //          DataInputStream
 //          ObjectInputStream
 
-          public static void main(String[] args) throws FileNotFoundException {
+          static String fileName = "myfiles\\123";
+
+
+          public static void main(String[] args) throws IOException , ClassNotFoundException {
+//                    FileReader fr = new FileReader("myfiles\\123.txt");
+//                    char c;
+//                    while ( (c = (char) fr.read()) != (char)-1 ) {
+//                              System.out.println(c);
+//                    }
+//
+//                    BufferedReader br = new BufferedReader(new FileReader(fileName + ".txt"));
+//                    String line = "";
+//                    while ( true ) {
+//                              line = br.readLine();
+//                              if ( line == null ) {
+//                                        break;
+//                              }
+//                              System.out.println(line);
+//                    }
+//
+//                    DataInputStream dis = new DataInputStream(new FileInputStream(fileName + ".dat"));
+//                    for ( ;; ) {
+//                              try {
+//                                        System.out.print(dis.readInt());
+//                                        System.out.print(dis.readInt());
+//                                        System.out.print(dis.readUTF());
+//                              } catch ( EOFException e ) {
+//                                        break;
+//                              }
+//                    }
+//
+                    ObjectInputStream ois = new ObjectInputStream(new FileInputStream("myFiles\\student.dat"));
+                    Object o = ois.readObject();
+                    if ( o instanceof Student ) {
+                              System.out.println((Student)o);
+                    }
           }
 
 }
