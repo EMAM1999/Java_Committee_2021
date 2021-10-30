@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="JXML_Game.Pause_GameController">
+   <children>
+      <ImageView fx:id="imagebackid" fitHeight="629.0" fitWidth="939.0" layoutX="-9.0" layoutY="-6.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/BackGround.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="sound_button" layoutX="850.0" layoutY="41.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="46.0" style="-fx-background-radius: 100; -fx-background-image: Images\audio.png;">
+         <graphic>
+            <ImageView fx:id="image_sound" fitHeight="42.0" fitWidth="79.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/audio.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="play_button" layoutX="862.0" layoutY="557.0" mnemonicParsing="false" onAction="#pause_game" prefHeight="52.0" prefWidth="62.0" style="-fx-background-radius: 100;">
+         <graphic>
+            <ImageView fx:id="play_image" fitHeight="50.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@Images/pause-button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fx:id="sharkImage" fitHeight="197.0" fitWidth="339.0" layoutX="554.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/leftshark%20fish.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="octoid" fitHeight="189.0" fitWidth="234.0" layoutX="306.0" layoutY="431.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/octo%20png.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="102.0" layoutX="197.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/hero3.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bubbleid1111" fitHeight="52.0" fitWidth="62.0" layoutX="197.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/bubble.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="score_show_id" layoutX="80.0" layoutY="26.0" />
+      <TextField fx:id="time_show" layoutX="342.0" layoutY="28.0" />
+      <Text fx:id="time_text_id" layoutX="280.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TiIME">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <Text fx:id="score_text_id" layoutX="14.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score" wrappingWidth="62.00001114606857">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+      <ImageView fx:id="bubbleid1111111" fitHeight="52.0" fitWidth="62.0" layoutX="471.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/bubble.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bubbleid11111111" fitHeight="52.0" fitWidth="62.0" layoutX="471.0" layoutY="355.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/bubble.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bubbleid11111" fitHeight="52.0" fitWidth="62.0" layoutX="432.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/bubble.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="bubbleid111111111" fitHeight="52.0" fitWidth="62.0" layoutX="579.0" layoutY="408.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/bubble.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="label_pase" fitHeight="222.0" fitWidth="659.0" layoutX="205.0" layoutY="201.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Images/PHOTO_PAUSE.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
