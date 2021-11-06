@@ -5,9 +5,13 @@
  */
 package Projects.gui.practise.clock;
 
+import java.time.LocalTime;
+import javafx.animation.*;
 import javafx.scene.*;
 import javafx.scene.paint.*;
 import javafx.scene.shape.*;
+import javafx.scene.transform.*;
+import javafx.util.*;
 
 /**
 
@@ -45,6 +49,7 @@ public class Clock2 extends Group {
                     initBody();
                     initHands();
                     this.getChildren().addAll(body , hands);
+                    initAnimation();
                     play();
           }
 
@@ -52,20 +57,41 @@ public class Clock2 extends Group {
           private Circle drawBody() {
                     Circle c = new Circle(radius);
                     c.setStroke(bodyColor);
+                    c.setStrokeWidth(radius / 30);
                     c.setFill(Color.TRANSPARENT);
                     return c;
           }
 
 
           private Group drawDashs() {
-                    Group longDashs = drawDashs(this.longDashs , 50);
-                    Group shortDashs = drawDashs(this.shortDashs , 25);
+                    Group longDashs = drawDashs(this.longDashs , radius * 17 / 20);
+                    Group shortDashs = drawDashs(this.shortDashs , radius * 18.5 / 20);
                     return new Group(longDashs , shortDashs);
           }
 
 
-          private Group drawDashs(int num , int len) {
-                    return new Group();
+          private Group drawDashs(int num , double len) {
+                    Group g = new Group();
+                    for ( int i = 0 ; i < num ; i++ ) {
+                              double degree = Math.toRadians(i * 360 / num);
+                              Line line = new Line(
+                                      radius * Math.sin(degree) , -radius * Math.cos(degree) ,
+                                      len * Math.sin(degree) , -len * Math.cos(degree));
+                              g.getChildren().add(line);
+                    }
+                    return g;
+          }
+
+          Timeline t;
+
+
+          private void initAnimation() {
+                    t = new Timeline(
+                            new KeyFrame(Duration.millis(70) ,
+                                    (e) -> refresh()
+                            )
+                    );
+                    t.setCycleCount(Timeline.INDEFINITE);
           }
 
 
@@ -99,7 +125,7 @@ public class Clock2 extends Group {
                     double h = radius;
                     Rectangle r = new Rectangle(-w / 2 , -h , w , h);
                     r.setFill(minuteHandColor);
-                    minuteHand.getChildren().add(r);
+                    secondHand.getChildren().add(r);
           }
 
 
@@ -108,12 +134,38 @@ public class Clock2 extends Group {
                     double h = radius * 4 / 5;
                     Rectangle r = new Rectangle(-w / 2 , -h , w , h);
                     r.setFill(hourHandColor);
-                    secondHand.getChildren().add(r);
+                    minuteHand.getChildren().add(r);
           }
 
 
           private void play() {
-//                    throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+                    t.play();
+          }
+
+
+          private void refresh() {
+                    LocalTime time = LocalTime.now();
+                    int h = time.getHour();
+                    int m = time.getMinute();
+                    int s = time.getSecond();
+
+                    double hourDegree = h * 30;
+                    double minuteDegree = m * 6;
+                    double secondDegree = s * 6;
+
+//                    hourHand.setRotate(hourDegree);
+//                    minuteHand.setRotate(minuteDegree);
+//                    secondHand.setRotate(secondDegree);
+                    Rotate hr = new Rotate(hourDegree);
+                    hourHand.getTransforms().clear();
+                    hourHand.getTransforms().add(hr);
+                    Rotate mr = new Rotate(minuteDegree);
+                    minuteHand.getTransforms().clear();
+                    minuteHand.getTransforms().add(mr);
+                    Rotate sr = new Rotate(secondDegree);
+                    secondHand.getTransforms().clear();
+                    secondHand.getTransforms().add(sr);
+
           }
 
 }
